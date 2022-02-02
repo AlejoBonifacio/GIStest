@@ -96,7 +96,7 @@
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/satellite-v9', // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
-      center: [-122.411, 37.785], // starting position [lng, lat]
+      center: [-64.26178,-31.40536], // starting position [lng, lat]
       zoom: 10,// starting zoom
       transformRequest: transformRequest
     });
@@ -106,7 +106,7 @@
         type: "GET",
         //YOUR TURN: Replace with csv export link
         url: https://docs.google.com/spreadsheets/d/1E_AtbYIq6Df3PPbLC7x5_CABA9DqDaXgyIxXqIvMde0/gviz/tq?tqx=out:csv&sheet=GIStest,
-        success: function (csvData) { makeGeoJSON(csvData); }
+        success: function (csvData) { makeGeoJSON(csvData); } /
       });
 
 
